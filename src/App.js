@@ -20,11 +20,17 @@ const App = () => {
       console.log(err)
     })
   }, [])
-console.log(people)
+
+  console.log(people)
   return (
     <div className="App">
       <h1 className="Header">REACT WARS</h1>
-      <Character people={people} />
+      {
+      people.map(e=>
+        <Character key={e.height} people={e.name} date={e.birth_year}/>
+      )
+      
+      }    
     </div>
   );
 }

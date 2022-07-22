@@ -39,29 +39,17 @@ border: 2px solid green;
 background-color: black;
 height: 5vh;
 margin-top: 1.5%;
-
 `
 
-function Character(props){
-    const {people} = props
+const Character = props => {
     return(
        <StyledDiv>
-        {
-            people.map(char=>{
-                return(<Div>
-                    <NamesStyles>{char.name}</NamesStyles><NamesStyles2> {char.birth_year}</NamesStyles2>
-                    </Div>
-                )
-            })
-        }
+        <Div>
+        <NamesStyles>{props.people}</NamesStyles><NamesStyles2>{props.date}</NamesStyles2>
+         </Div>
+    
        </StyledDiv>
     )
-
-
-
-
-
-
 }
 
 export default Character
