@@ -12,13 +12,13 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
-- [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
-- [ ] Open the assignment in Canvas and click on the "Set up git" option (Or, depending, if you see something along the lines of 'Load Sprint Challenge Submission in a new window' click that).
-- [ ] Wire your fork to Codegrade using the "Click here for instructions on setting up Git submissions" link, select Github, authorize Github.
-- [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`. MAKE SURE TO PUSH TO MAIN, YOU NO LONGER NEED TO CREATE A NEW BRANCH!!
-- [ ] Make commits often! PUSH TO MAIN!!!
-- [ ] You can run tests locally by running npm run test.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [x] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
+- [x] Open the assignment in Canvas and click on the "Set up git" option (Or, depending, if you see something along the lines of 'Load Sprint Challenge Submission in a new window' click that).
+- [x] Wire your fork to Codegrade using the "Click here for instructions on setting up Git submissions" link, select Github, authorize Github.
+- [x] Push your first commit: `git commit --allow-empty -m "first commit" && git push`. MAKE SURE TO PUSH TO MAIN, YOU NO LONGER NEED TO CREATE A NEW BRANCH!!
+- [x] Make commits often! PUSH TO MAIN!!!
+- [x] You can run tests locally by running npm run test.
+- [x] Check to see that Codegrade has accepted your git submission.
 
 ## Project Instructions
 
@@ -36,9 +36,9 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 Your finished project must include all of the following requirements:
 
-- [ ] Use the endpoint `[GET] https://swapi.dev/api/people/` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
-- [ ] Set the list of characters into state.
-- [ ] Render your characters to the DOM:
+- [x] Use the endpoint `[GET] https://swapi.dev/api/people/` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
+- [x] Set the list of characters into state.
+- [x] Render your characters to the DOM:
 
   1. Build a React component named 'Character' to render an individual character.
   1. Map over the list in state, and for each character render a Character to the page.
@@ -79,6 +79,10 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+  React is a JS library that allows us to create UIs.  Basically, we will build seperate componets(functions) that will render jsx, and the jsx can be updated by updating the state of a variable declared using useState.  It solves the problem of having a giant mess of JS and allowing us to effortlessly build interactive UIs.  
 1. Describe component state.
+Basically, whenever state changes, the component re renders.  state is a variable, that contains data, about the current state(condition(to not use state 250 times in one sentence)) of the component
 1. Describe props.
+Props are data passed from a parent to a child.  can be a function, obj, any first class citizen as one may say.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+side effects are something rendered after the entire page renders.  This something can be an axios call, console.log, whatever your heart desires.  If you want to change state or props, you will pass the state or prop that you want the sideEffect to render if the state changes into the second parameter.  
