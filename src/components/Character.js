@@ -47,7 +47,6 @@ const Character = props => {
         <Div>
         <NamesStyles>{props.people}</NamesStyles><NamesStyles2>{props.date}</NamesStyles2>
          </Div>
-    
        </StyledDiv>
     )
 }
